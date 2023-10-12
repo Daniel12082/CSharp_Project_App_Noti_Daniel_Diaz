@@ -4,57 +4,65 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Entities;
 using Core.Interface;
+using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
-        private readonly DataContext _context;
-
-        public GenericRepository(DataContext context)
+        private readonly AppNotiContext _context;
+        public GenericRepository(AppNotiContext context)
         {
             _context = context;
         }
-
-        public async Task<T> GetByIdAsync(int id)
+        public virtual void Add(T entity)
         {
-            return await _context.Set<T>().FindAsync(id);
+            _context.Set<T>().Add(entity);
         }
 
-        public async Task<IReadOnlyList<T>> GetAllAsync()
+        public virtual void AddRange(IEnumerable<T> entities)
+        {
+            _context.Set<T>().AddRange(entities);
+        }
+
+        public virtual void Delete(T entity)
+        {
+            _context.Set<T>().Remove(entity);
+        }
+
+        public virtual void DeleteRange(IEnumerable<T> entities)
+        {
+            _context.Set<T>().RemoveRange(entities);
+        }
+
+        public virtual IEnumerable<T> Find(Func<T, bool> predicate)
+        {
+            return _context.Set<T>().Where(predicate);
+        }
+
+        public virtual async Task<IEnumerable<T>> GetAllAsync()
         {
             return await _context.Set<T>().ToListAsync();
         }
-
-        public async Task<IReadOnlyList<T>> FindAsync(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
+        public virtual async Task<(int totalRegistros, IEnumerable<T> registros)> GetAllAsync(int pageIndex, int pageSize)
         {
-            return await _context.Set<T>().Where(predicate).ToListAsync();
+            var totalRegistros = await _context.Set<T>().CountAsync();
+            var registros = await _context.Set<T>()
+            .Skip((pageIndex - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
+        return (totalRegistros, registros);
         }
 
-        public async Task AddAsync(T entity)
+        public virtual async Task<T> GetByIdAsync(int id)
         {
-            await _context.Set<T>().AddAsync(entity);
-        }
-
-        public async Task AddRangeAsync(IEnumerable<T> entities)
-        {
-            await _context.Set<T>().AddRangeAsync(entities);
+            return await _context.Set<T>().FindAsync(id);
         }
 
         public void Update(T entity)
         {
             _context.Set<T>().Update(entity);
-        }
-
-        public void Delete(T entity)
-        {
-            _context.Set<T>().Remove(entity);
-        }
-
-        public void DeleteRange(IEnumerable<T> entities)
-        {
-            _context.Set<T>().RemoveRange(entities);
         }
     }
 }
