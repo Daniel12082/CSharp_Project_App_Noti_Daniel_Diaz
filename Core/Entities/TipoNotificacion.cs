@@ -8,5 +8,6 @@ namespace Core.Entities
     public class TipoNotificacion : BaseEntity
     {
         public string NombreTipo { get; set; }
+        public ICollection<Blockchain> Blockchains { get; set; }
     }
 }

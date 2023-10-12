@@ -11,5 +11,6 @@ namespace Core.Entities
         [Required]
         public string NombreUsuario { get; set; }
         public int DescAccion { get; set; }
+        public ICollection<Blockchain> Blockchains { get; set; }
     }
 }

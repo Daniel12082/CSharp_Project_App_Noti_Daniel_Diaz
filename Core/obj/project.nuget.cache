@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t+AAL/NjrY8c60gFE2n1pHh9O5GA3Sko5pMvRZYatT9pAV+zMkK9vbSpQYAjGBRiMRavl32R019gs62MlJsCqg==",
+  "dgSpecHash": "lAH/s9mhDy5s1FRDlhYj2IThqKqsaJrwlYuf/3BOS2ulcGWUEhj6QXI6qEzdL3i/r2EpX7kUm5W1N0xqx5wD4Q==",
   "success": true,
-  "projectFilePath": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Core/Core.csproj",
+  "projectFilePath": "C:\\Users\\APM02-042\\Documents\\App_Noti\\Core\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
