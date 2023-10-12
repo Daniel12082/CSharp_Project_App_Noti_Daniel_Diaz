@@ -1,33 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\API\\API.csproj": {}
+    "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/API/API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\API\\API.csproj": {
+    "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\API\\API.csproj",
+        "projectUniqueName": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/API/API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\sobri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\API\\obj\\",
+        "projectPath": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/API/API.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sobri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "/usr/local/dotnet/7.0.306/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Infrastructure\\Infrastructure.csproj"
+              "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Infrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -100,21 +101,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Core\\Core.csproj": {
+    "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Core\\Core.csproj",
+        "projectUniqueName": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\sobri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Core\\obj\\",
+        "projectPath": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Core/Core.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sobri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -153,21 +154,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Infrastructure\\Infrastructure.csproj": {
+    "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\sobri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Infrastructure\\obj\\",
+        "projectPath": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sobri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -179,8 +180,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\sobri\\Documents\\CSharp_P-roject_App_Noti_Daniel_Diaz\\Core\\Core.csproj"
+              "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Core/Core.csproj": {
+                "projectPath": "/workspaces/CSharp_P-roject_App_Noti_Daniel_Diaz/Core/Core.csproj"
               }
             }
           }
@@ -224,7 +225,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       }
     }
