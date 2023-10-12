@@ -7,7 +7,7 @@ using Infrastructure.Data;
 
 namespace Infrastructure.Repository
 {
-    public class MaestroVsSubmoduloRepository : GenericRepository<MaestroVsSubmodulos>
+    public class MaestroVsSubmoduloRepository : GenericRepository<MaestroVsSubmodulo>
     {
         private readonly AppNotiContext context;
 

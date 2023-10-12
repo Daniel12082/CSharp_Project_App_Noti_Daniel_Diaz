@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class MaestroVsSubmodulos : BaseEntity
+    public class MaestroVsSubmodulo : BaseEntity
     {
         public int IdMaestroFk { get; set; }
         public ModuloMaestro Maestro { get; set; }
