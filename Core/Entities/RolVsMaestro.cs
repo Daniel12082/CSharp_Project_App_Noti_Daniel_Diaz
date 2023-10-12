@@ -8,6 +8,8 @@ namespace Core.Entities
     public class RolVsMaestro : BaseEntity
     {
         public int IdRolFk { get; set; }
-        public int IdMaestroFK { get; set; } 
+        public Rol Roles { get; set; }
+        public int IdMaestroFK { get; set; }
+        public ModuloMaestro Maestros { get; set; }
     }
 }
