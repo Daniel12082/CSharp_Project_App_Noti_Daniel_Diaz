@@ -9,5 +9,6 @@ namespace Core.Entities
     {
         public string NombreTipo { get; set; }
         public ICollection<Blockchain> Blockchains { get; set; }
+        public ICollection<ModuloNotificacion> ModuloNotificaciones { get; set; }
     }
 }

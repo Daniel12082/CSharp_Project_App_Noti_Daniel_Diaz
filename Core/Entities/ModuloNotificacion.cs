@@ -7,6 +7,7 @@ namespace Core.Entities
 {
     public class ModuloNotificacion : BaseEntity
     {
+        public string TextoNotificacion { get; set; }
         public string AsuntoNotifcacion { get; set; }
         public int IdTipoNotificacionFk { get; set; }
         public TipoNotificacion tipoNotificacion { get; set; }
@@ -17,12 +18,6 @@ namespace Core.Entities
         public int IdHiloRespuestaFk { get; set; }
         public HiloRespuestaNotificacion hiloRespuesta { get; set; }
         public int IdTipoRequerimientoFk { get; set; }
-        public string TextoNotificacion { get; set; }
-        public ICollection<HiloRespuestaNotificacion> HiloRespuestaNotificaciones { get; set; }
-        public ICollection<Radicado> Radicados { get; set; }
-        public ICollection<EstadoNotificacion> EstadoNotificaciones { get; set; }
-        public ICollection<TipoNotificacion> TipoNotificaciones { get; set; }
-        public ICollection<TipoRequerimiento> TipoRequerimientos { get; set; }
-        public ICollection<Formato> Formatos { get; set; }
+        public TipoRequerimiento tipoRequerimiento { get; set; }
     }
 }
