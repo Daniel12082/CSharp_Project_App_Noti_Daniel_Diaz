@@ -10,7 +10,7 @@ namespace API.Extension;
 
     public static class ApplicationServiceExtension
     {
-        public static void configureCors(IServiceCollection services)
+        public static void configureCors(this IServiceCollection services)
         {
             services.AddCors(options =>
             {
