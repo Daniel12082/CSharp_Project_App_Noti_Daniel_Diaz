@@ -6,7 +6,7 @@ using Core.Entities;
 
 namespace API.Dtos
 {
-    public class MaestroVsSubmodulosDto : GenericDto
+    public class MaestroVsSubmoduloDto : GenericDto
     {
         public int IdMaestroFk { get; set; }
         public int IdSubModuloFk { get; set; }

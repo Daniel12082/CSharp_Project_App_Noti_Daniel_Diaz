@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace API.Dtos
 {
-    public class TipoRequirimientoDto : GenericDto
+    public class TipoRequerimientoDto : GenericDto
     {
         public string Nombre { get; set; }
     }
