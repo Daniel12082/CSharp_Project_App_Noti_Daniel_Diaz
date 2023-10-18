@@ -23,5 +23,6 @@ namespace Core.Interfaces
         ISubmodulo Submodulo { get; }
         ITipoNotificacion TipoNotificacion { get; }
         ITipoRequerimiento TipoRequerimiento { get; }
+        Task<int> SaveAsync();
     }
 }

@@ -8,5 +8,6 @@ namespace API.Dtos
     public class SubmoduloDto : GenericDto
     {
         public string NombreSubmodulo { get; set; }
+        public ICollection<MaestroVsSubmoduloDto> MaestroVsSubmodulo { get; set; }
     }
 }
