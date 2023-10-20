@@ -15,6 +15,5 @@ namespace Infrastructure.Repository
         {
             _context = context;
         }
-
     }
 }

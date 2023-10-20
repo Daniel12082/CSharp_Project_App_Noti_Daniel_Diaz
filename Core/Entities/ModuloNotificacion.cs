@@ -19,5 +19,7 @@ namespace Core.Entities
         public HiloRespuestaNotificacion hiloRespuesta { get; set; }
         public int IdTipoRequerimientoFk { get; set; }
         public TipoRequerimiento tipoRequerimiento { get; set; }
+        public int IdFormatoFk { get; set; }
+        public Formato formato { get; set; }
     }
 }

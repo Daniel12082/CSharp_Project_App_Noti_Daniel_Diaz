@@ -724,19 +724,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\APM02-042\\.nuget\\packages\\": {}
+    "C:\\Users\\sobri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APM02-042\\Documents\\App_Noti\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\sobri\\Desktop\\Proyectos_CSharp\\CSharp_Project_App_Noti_Daniel_Diaz\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\APM02-042\\Documents\\App_Noti\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\APM02-042\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APM02-042\\Documents\\App_Noti\\Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\sobri\\Desktop\\Proyectos_CSharp\\CSharp_Project_App_Noti_Daniel_Diaz\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\sobri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sobri\\Desktop\\Proyectos_CSharp\\CSharp_Project_App_Noti_Daniel_Diaz\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\APM02-042\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\sobri\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -748,8 +748,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\APM02-042\\Documents\\App_Noti\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\APM02-042\\Documents\\App_Noti\\Core\\Core.csproj"
+            "C:\\Users\\sobri\\Desktop\\Proyectos_CSharp\\CSharp_Project_App_Noti_Daniel_Diaz\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\sobri\\Desktop\\Proyectos_CSharp\\CSharp_Project_App_Noti_Daniel_Diaz\\Core\\Core.csproj"
             }
           }
         }
@@ -793,7 +793,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,31 +8,35 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Data.Configuration
 {
-    public class BlockchainConfiguration : IEntityTypeConfiguration<Blockchain>
+    public class BlockChainConfiguration : IEntityTypeConfiguration<Blockchain>
     {
         public void Configure(EntityTypeBuilder<Blockchain> builder)
         {
-            builder.ToTable("Blockchain");
-            
-            builder.HasKey(x => x.Id);
-            builder.Property(x => x.Id);
+            builder.ToTable("BlockChain");
 
-            builder.HasOne(x => x.Notificaciones)
-                .WithMany(x => x.Blockchains)
-                .HasForeignKey(x => x.IdNotificacionFk);
-            builder.HasOne(x => x.HilosRespuestasNotificaciones)
-                .WithMany(x => x.Blockchains)
-                .HasForeignKey(x => x.IdHiloRespuestaFk);
-            builder.HasOne(x => x.Auditorias)
-                .WithMany(x => x.Blockchains)
-                .HasForeignKey(x => x.IdAuditoriaFk);
-            builder.Property(x => x.HasGenerado)
-                .IsRequired()
-                .HasMaxLength(100);
-            builder.Property(x => x.FechaCreacion)
-                .IsRequired();
-            builder.Property(x => x.FechaModificacion);
-            
+            builder.HasKey(e => e.Id);
+            builder.Property(e => e.Id);
+
+            builder.Property(e => e.HasGenerado)
+            .IsRequired()
+            .HasMaxLength(100);
+
+            builder.Property(w => w.FechaCreacion)
+            .HasColumnType("DateTime");
+            builder.Property(w => w.FechaModificacion)
+            .HasColumnType("DateTime");
+
+            builder.HasOne(p => p.Auditorias)
+            .WithMany(p => p.Blockchains)
+            .HasForeignKey(e => e.IdAuditoriaFk);
+
+            builder.HasOne(p => p.HilosRespuestasNotificaciones)
+            .WithMany(p => p.Blockchains)
+            .HasForeignKey(p => p.IdHiloRespuestaFk);
+
+            builder.HasOne(p => p.TipoNotificaciones)
+            .WithMany(p => p.Blockchains)
+            .HasForeignKey(P => P.IdNotificacionFk);
         }
     }
 }

@@ -18,6 +18,7 @@ namespace Infrastructure.Data;
         public DbSet<GenericoVsModulo> GenericoVsModulos { get; set; }
         public DbSet<HiloRespuestaNotificacion> HiloRespuestaNotificaciones { get; set; }
         public DbSet<MaestroVsSubmodulo> MaestroVsSubmodulos { get; set; }
+        public DbSet<ModuloNotificacion> ModuloNotificaciones { get; set; }
         public DbSet<ModuloMaestro> Maestros { get; set; }
         public DbSet<PermisoGenerico> PermisoGenericos { get; set; }
         public DbSet<Radicado> Radicados { get; set; }

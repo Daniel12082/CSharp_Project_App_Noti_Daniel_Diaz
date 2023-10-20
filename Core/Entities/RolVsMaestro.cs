@@ -9,7 +9,7 @@ namespace Core.Entities
     {
         public int IdRolFk { get; set; }
         public Rol Roles { get; set; }
-        public int IdMaestroFK { get; set; }
+        public int IdMaestroFk { get; set; }
         public ModuloMaestro Maestros { get; set; }
     }
 }

@@ -210,5 +210,10 @@ namespace Infrastructure.UnitOfWork
         {
             _context.Dispose();
         }
-    }
+
+        public async Task<int> SaveAsync()
+        {
+            return await _context.SaveChangesAsync();
+        }
+        }
 }

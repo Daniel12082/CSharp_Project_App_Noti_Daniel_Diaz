@@ -24,8 +24,9 @@ namespace Infrastructure.Data.Configuration
             builder.Property(a => a.DescAccion)
                 .IsRequired();
             builder.Property(a => a.FechaCreacion)
-                .IsRequired();
-            builder.Property(a => a.FechaModificacion);
+            .HasColumnType("DateTime");
+            builder.Property(a => a.FechaModificacion)
+            .HasColumnType("DateTime");
         }
     }
 }
